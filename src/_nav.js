@@ -22,12 +22,12 @@ export default {
     {
       name: "Android 上傳",
       url: "/theme/typography",
-      icon: "icon-puzzle"
+      icon: "icon-layers"
     },
     {
       name: "iOS 上傳",
       url: "/theme/typography",
-      icon: "icon-star"
+      icon: "icon-energy"
     }
   ]
 };
