@@ -74,8 +74,8 @@ function configRoutes() {
       children: [
         {
           path: "apps",
-          name: "Apps",
-          component: Apps
+          name: "Forms",
+          component: Forms
         },
         {
           path: "theme",

@@ -1,39 +1,48 @@
 <template>
   <div class="app">
-    <DefaultHeader/>
+    <DefaultHeader />
     <div class="app-body">
       <AppSidebar fixed>
-        <SidebarHeader/>
-        <SidebarForm/>
+        <SidebarHeader />
+        <SidebarForm />
         <SidebarNav :navItems="nav"></SidebarNav>
-        <SidebarFooter/>
-        <SidebarMinimizer/>
+        <SidebarFooter />
+        <SidebarMinimizer />
       </AppSidebar>
       <main class="main">
-        <Breadcrumb :list="list"/>
+        <!-- <Breadcrumb :list="list" /> -->
         <div class="container-fluid">
           <router-view></router-view>
         </div>
       </main>
       <AppAside fixed>
-        <!--aside-->
-        <DefaultAside/>
+        <!-- aside -->
+        <DefaultAside />
       </AppAside>
     </div>
-    <DefaultFooter/>
+    <DefaultFooter />
   </div>
 </template>
 
 <script>
-import nav from '@/_nav'
-import { Sidebar as AppSidebar, SidebarFooter, SidebarForm, SidebarHeader, SidebarMinimizer, SidebarNav, Aside as AppAside, Breadcrumb } from '@coreui/vue'
-import DefaultAside from './DefaultAside'
-import DefaultHeaderDropdownAccnt from './DefaultHeaderDropdownAccnt'
-import DefaultHeader from './DefaultHeader'
-import DefaultFooter from './DefaultFooter'
+import nav from "@/_nav";
+import {
+  Sidebar as AppSidebar,
+  SidebarFooter,
+  SidebarForm,
+  SidebarHeader,
+  SidebarMinimizer,
+  SidebarNav,
+  Aside as AppAside,
+  Breadcrumb
+} from "@coreui/vue";
+import DefaultAside from "./DefaultAside";
+import DefaultHeaderDropdownAccnt from "./DefaultHeaderDropdownAccnt";
+import DefaultHeader from "./DefaultHeader";
+import DefaultFooter from "./DefaultFooter";
 
 export default {
-  name: 'DefaultContainer',
+  name: "DefaultContainer",
   components: {
     AppSidebar,
     AppAside,
@@ -48,18 +57,20 @@ export default {
     DefaultFooter,
     DefaultHeader
   },
-  data () {
+  data() {
     return {
       nav: nav.items
-    }
+    };
   },
   computed: {
-    name () {
-      return this.$route.name
+    name() {
+      return this.$route.name;
     },
-    list () {
-      return this.$route.matched.filter((route) => route.name || route.meta.label )
+    list() {
+      return this.$route.matched.filter(
+        route => route.name || route.meta.label
+      );
     }
   }
-}
+};
 </script>
