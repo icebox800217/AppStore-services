@@ -10,8 +10,8 @@ export default {
       }
     },
     {
-      name: "個人資料修改",
-      url: "/users/User",
+      name: "登入",
+      url: "/login",
       icon: "icon-pencil"
     },
     {

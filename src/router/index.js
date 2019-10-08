@@ -68,14 +68,14 @@ function configRoutes() {
   return [
     {
       path: "/",
-      redirect: "/apps",
+      redirect: "/login",
       name: "Home",
       component: DefaultContainer,
       children: [
         {
-          path: "apps",
-          name: "Apps",
-          component: Apps
+          path: "login",
+          name: "Login",
+          component: Login
         },
         {
           path: "theme",
