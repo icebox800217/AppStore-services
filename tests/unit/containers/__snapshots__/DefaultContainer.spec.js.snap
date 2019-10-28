@@ -93,20 +93,7 @@ exports[`DefaultContainer.vue renders correctly 1`] = `
         routertag="a"
         target="_self"
       >
-        <i
-          class="icon-bell"
-        />
-         
-        <b-badge-stub
-          event="click"
-          pill="true"
-          routertag="a"
-          tag="span"
-          target="_self"
-          variant="danger"
-        >
-          5
-        </b-badge-stub>
+        <defaultheaderdropdownnotif-stub />
       </b-nav-item-stub>
        
       <b-nav-item-stub
@@ -116,9 +103,7 @@ exports[`DefaultContainer.vue renders correctly 1`] = `
         routertag="a"
         target="_self"
       >
-        <i
-          class="icon-list"
-        />
+        <defaultheaderdropdowntasks-stub />
       </b-nav-item-stub>
        
       <b-nav-item-stub
@@ -128,9 +113,17 @@ exports[`DefaultContainer.vue renders correctly 1`] = `
         routertag="a"
         target="_self"
       >
-        <i
-          class="icon-location-pin"
-        />
+        <defaultheaderdropdownmssgs-stub />
+      </b-nav-item-stub>
+       
+      <b-nav-item-stub
+        class="d-md-down-none"
+        event="click"
+        linkattrs="[object Object]"
+        routertag="a"
+        target="_self"
+      >
+        <defaultheaderdropdown-stub />
       </b-nav-item-stub>
        
       <defaultheaderdropdownaccnt-stub />
@@ -153,7 +146,7 @@ exports[`DefaultContainer.vue renders correctly 1`] = `
       <sidebarform-stub />
        
       <sidebarnav-stub
-        navitems="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+        navitems="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
       />
        
       <sidebarfooter-stub />

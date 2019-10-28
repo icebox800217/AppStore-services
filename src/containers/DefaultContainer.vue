@@ -1,11 +1,64 @@
 <template>
   <div class="app">
-    <DefaultHeader />
+    <AppHeader fixed>
+      <SidebarToggler class="d-lg-none" display="md" mobile />
+      <!-- <b-link class="navbar-brand" to="#">
+        <img
+          class="navbar-brand-full"
+          src="img/brand/logo.svg"
+          width="89"
+          height="25"
+          alt="CoreUI Logo"
+        />
+        <img
+          class="navbar-brand-minimized"
+          src="img/brand/sygnet.svg"
+          width="30"
+          height="30"
+          alt="CoreUI Logo"
+        />
+      </b-link>-->
+      <SidebarToggler class="d-md-down-none" display="lg" :defaultOpen="true" />
+      <b-navbar-nav class="d-md-down-none">
+        <b-nav-item class="px-3" to="/managers/managehome" v-if="isManage">管理首頁</b-nav-item>
+        <b-nav-item class="px-3" to="/managers/reviewapps" v-if="isManage">審核 Apps</b-nav-item>
+        <b-nav-item class="px-3" to="/managers/reviewdevelopers" v-if="isManage">審核 開發人員</b-nav-item>
+        <b-nav-item class="px-3" to="/managers/manageapps" v-if="isManage">管理 Apps</b-nav-item>
+        <b-nav-item class="px-3" to="/managers/managemembers" v-if="isManage">管理會員</b-nav-item>
+        <b-nav-item class="px-3" to="/managers/manageclass" v-if="isManage">管理類別</b-nav-item>
+        <b-nav-item class="px-3" to="/managers/newdevelopers" v-if="isManage">新增開發人員</b-nav-item>
+        <b-nav-item class="px-3" to="/managers/managealter" v-if="isManage">個人資料修改</b-nav-item>
+        <b-nav-item class="px-3" to="/developers/myapps" v-if="isDev">我的 Apps</b-nav-item>
+        <b-nav-item class="px-3" to="/developers/androidupload" exact v-if="isDev">Android 上傳</b-nav-item>
+        <b-nav-item class="px-3" to="/developers/iosupload" exact v-if="isDev">iOS 上傳</b-nav-item>
+        <b-nav-item class="px-3" to="/developers/modprofile" exact v-if="isDev">個人資料修改</b-nav-item>
+        <!-- <b-nav-item class="px-3">Settings</b-nav-item> -->
+      </b-navbar-nav>
+      <b-navbar-nav class="ml-auto">
+        <!-- <b-nav-item class="d-md-down-none">
+          <DefaultHeaderDropdownNotif />
+        </b-nav-item>
+        <b-nav-item class="d-md-down-none">
+          <DefaultHeaderDropdownTasks />
+        </b-nav-item>
+        <b-nav-item class="d-md-down-none">
+          <DefaultHeaderDropdownMssgs />
+        </b-nav-item>-->
+        <!-- <b-nav-item class="d-md-down-none">
+          <DefaultHeaderDropdown />
+        </b-nav-item>-->
+        <DefaultHeaderDropdownAccnt />
+      </b-navbar-nav>
+      <!-- <AsideToggler class="d-none d-lg-block" /> -->
+      <!--<AsideToggler class="d-lg-none" mobile />-->
+    </AppHeader>
     <div class="app-body">
       <AppSidebar fixed>
         <SidebarHeader />
         <SidebarForm />
-        <SidebarNav :navItems="nav"></SidebarNav>
+        <!-- <SidebarNav :navItems="nav"></SidebarNav> -->
+        <SidebarNav :navItems="navManage" v-if="isManage"></SidebarNav>
+        <SidebarNav :navItems="navDev" v-if="isDev"></SidebarNav>
         <SidebarFooter />
         <SidebarMinimizer />
       </AppSidebar>
@@ -16,17 +69,31 @@
         </div>
       </main>
       <AppAside fixed>
-        <!-- aside -->
+        <!--aside-->
         <DefaultAside />
       </AppAside>
     </div>
-    <DefaultFooter />
+    <TheFooter>
+      <!--footer-->
+      <div>
+        <!-- <a href="https://coreui.io">CoreUI</a> -->
+        <span class="ml-1">第4組專題 App Store</span>
+      </div>
+      <!-- <div class="ml-auto">
+        <span class="mr-1">Powered by</span>
+        <a href="https://coreui.io">CoreUI for Vue</a>
+      </div>-->
+    </TheFooter>
   </div>
 </template>
 
 <script>
 import nav from "@/_nav";
+import navManage from "@/_navManage";
+import navDev from "@/_navDev";
 import {
+  Header as AppHeader,
+  SidebarToggler,
   Sidebar as AppSidebar,
   SidebarFooter,
   SidebarForm,
@@ -34,32 +101,47 @@ import {
   SidebarMinimizer,
   SidebarNav,
   Aside as AppAside,
+  AsideToggler,
+  Footer as TheFooter,
   Breadcrumb
 } from "@coreui/vue";
 import DefaultAside from "./DefaultAside";
+import DefaultHeaderDropdown from "./DefaultHeaderDropdown";
+import DefaultHeaderDropdownNotif from "./DefaultHeaderDropdownNotif";
 import DefaultHeaderDropdownAccnt from "./DefaultHeaderDropdownAccnt";
-import DefaultHeader from "./DefaultHeader";
-import DefaultFooter from "./DefaultFooter";
+import DefaultHeaderDropdownMssgs from "./DefaultHeaderDropdownMssgs";
+import DefaultHeaderDropdownTasks from "./DefaultHeaderDropdownTasks";
 
 export default {
   name: "DefaultContainer",
   components: {
+    AsideToggler,
+    AppHeader,
     AppSidebar,
     AppAside,
+    TheFooter,
     Breadcrumb,
     DefaultAside,
+    DefaultHeaderDropdown,
+    DefaultHeaderDropdownMssgs,
+    DefaultHeaderDropdownNotif,
+    DefaultHeaderDropdownTasks,
     DefaultHeaderDropdownAccnt,
     SidebarForm,
     SidebarFooter,
+    SidebarToggler,
     SidebarHeader,
     SidebarNav,
-    SidebarMinimizer,
-    DefaultFooter,
-    DefaultHeader
+    SidebarMinimizer
   },
   data() {
     return {
-      nav: nav.items
+      nav: nav.items,
+      navManage: navManage.items,
+      navDev: navDev.items,
+      isManage: false,
+      isDev: false,
+      userLevel: sessionStorage.getItem("userLevel")
     };
   },
   computed: {
@@ -70,6 +152,16 @@ export default {
       return this.$route.matched.filter(
         route => route.name || route.meta.label
       );
+    }
+  },
+  created() {
+    if (this.userLevel == "2") {
+      this.isDev = true;
+      // this.isManage = false;
+      // console.log(this.isDev);
+      // console.log(this.isManage);
+    } else if (this.userLevel == "3") {
+      this.isManage = true;
     }
   }
 };

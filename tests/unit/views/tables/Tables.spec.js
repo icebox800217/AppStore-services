@@ -2,7 +2,7 @@ import Vue from 'vue'
 // import { mount, shallowMount } from '@vue/test-utils';
 import { mount } from '@vue/test-utils';
 import BootstrapVue from 'bootstrap-vue'
-import Tables from '@/views/base/Tables'
+import Tables from '@/views/tables/Tables'
 
 Vue.use(BootstrapVue)
 

@@ -38,6 +38,7 @@
         <b-card>
           <div slot="header">
             3d Switch
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked variant="3d" />
           <c-switch class="mx-1" color="secondary" checked variant="3d" />
@@ -53,7 +54,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            3d Switch <small><code>disabled</code></small>
+            3d Switch <small><code>disabled </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked variant="3d" disabled />
           <c-switch class="mx-1" color="secondary" checked variant="3d" disabled />
@@ -69,7 +71,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            3d Switch <small><code>outline="alt"</code></small>
+            3d Switch <small><code>outline="alt" </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked variant="3d" outline="alt" />
           <c-switch class="mx-1" color="secondary" checked variant="3d" outline="alt" />
@@ -85,7 +88,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            3d Switch <small><code>label</code></small>
+            3d Switch <small><code>label </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" defaultChecked variant="3d" label v-bind="labelIcon" />
           <c-switch class="mx-1" color="secondary" defaultChecked variant="3d" label v-bind="labelIcon" />
@@ -101,7 +105,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            3d Switch <small><code>outline="alt" label</code></small>
+            3d Switch <small><code>outline="alt" label </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" defaultChecked variant="3d" outline="alt" label v-bind="labelIcon" />
           <c-switch class="mx-1" color="secondary" defaultChecked variant="3d" outline="alt" label v-bind="labelIcon" />
@@ -117,7 +122,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            3d Switch <small><code>outline="alt" label</code></small>
+            3d Switch <small><code>outline="alt" label </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" defaultChecked variant="3d" outline="alt" label />
           <c-switch class="mx-1" color="secondary" defaultChecked variant="3d" outline="alt" label />
@@ -133,7 +139,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>outline</code></small>
+            Switch <small><code>outline </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked outline />
           <c-switch class="mx-1" color="secondary" checked outline />
@@ -149,7 +156,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>outline variant="pill"</code></small>
+            Switch <small><code>outline variant="pill" </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked outline variant="pill"/>
           <c-switch class="mx-1" color="secondary" checked outline variant="pill" />
@@ -165,7 +173,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>outline="alt"</code></small>
+            Switch <small><code>outline="alt" </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked outline="alt" />
           <c-switch class="mx-1" color="secondary" checked outline="alt" />
@@ -181,7 +190,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>outline="alt" variant="pill"</code></small>
+            Switch <small><code>outline="alt" variant="pill" </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked outline="alt" variant="pill"/>
           <c-switch class="mx-1" color="secondary" checked outline="alt" variant="pill" />
@@ -197,7 +207,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>label</code></small>
+            Switch <small><code>label </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked label />
           <c-switch class="mx-1" color="secondary" checked label />
@@ -213,7 +224,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>label variant="pill"</code></small>
+            Switch <small><code>label variant="pill" </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked label variant="pill" />
           <c-switch class="mx-1" color="secondary" checked label variant="pill" />
@@ -229,7 +241,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>label outline</code></small>
+            Switch <small><code>label outline </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked label outline />
           <c-switch class="mx-1" color="secondary" checked label outline />
@@ -245,7 +258,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>label outline</code></small>
+            Switch <small><code>label outline </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked label outline variant="pill" />
           <c-switch class="mx-1" color="secondary" checked label outline variant="pill" />
@@ -261,7 +275,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>label outline</code></small>
+            Switch <small><code>label outline </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked label outline="alt" />
           <c-switch class="mx-1" color="secondary" checked label outline="alt" />
@@ -277,7 +292,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>label outline</code></small>
+            Switch <small><code>label outline </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked label outline="alt" variant="pill" />
           <c-switch class="mx-1" color="secondary" checked label outline="alt" variant="pill" />
@@ -294,7 +310,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>label</code></small>
+            Switch <small><code>label </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked label dataOn="yes" dataOff="no"/>
           <c-switch class="mx-1" color="secondary" checked label v-bind="labelIcon" />
@@ -310,7 +327,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>label variant="pill"</code></small>
+            Switch <small><code>label variant="pill" </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked label variant="pill" v-bind="labelIcon" />
           <c-switch class="mx-1" color="secondary" checked label variant="pill" v-bind="labelIcon" />
@@ -326,7 +344,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>label outline</code></small>
+            Switch <small><code>label outline </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked label outline v-bind="labelIcon" />
           <c-switch class="mx-1" color="secondary" checked label outline v-bind="labelIcon" />
@@ -342,7 +361,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>label outline</code></small>
+            Switch <small><code>label outline </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked label outline variant="pill" v-bind="labelIcon" />
           <c-switch class="mx-1" color="secondary" checked label outline variant="pill" v-bind="labelIcon" />
@@ -358,7 +378,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>label outline</code></small>
+            Switch <small><code>label outline </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked label outline="alt" v-bind="labelIcon" />
           <c-switch class="mx-1" color="secondary" checked label outline="alt" v-bind="labelIcon" />
@@ -374,7 +395,8 @@
       <b-col xs="12" md="6">
         <b-card>
           <div slot="header">
-            Switch <small><code>label outline</code></small>
+            Switch <small><code>label outline </code></small>
+            <a href="https://coreui.io/pro/vue/" class="badge badge-danger">CoreUI Pro Component</a>
           </div>
           <c-switch class="mx-1" color="primary" checked label outline="alt" variant="pill" v-bind="labelTxt" />
           <c-switch class="mx-1" color="secondary" checked label outline="alt" variant="pill" v-bind="labelIcon" />

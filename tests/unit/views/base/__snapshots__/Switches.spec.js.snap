@@ -280,7 +280,13 @@ exports[`Switches.vue renders correctly 1`] = `
         >
           
           3d Switch
-        
+          
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -407,9 +413,16 @@ exports[`Switches.vue renders correctly 1`] = `
           3d Switch 
           <small>
             <code>
-              disabled
+              disabled 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -544,9 +557,16 @@ exports[`Switches.vue renders correctly 1`] = `
           3d Switch 
           <small>
             <code>
-              outline="alt"
+              outline="alt" 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -682,9 +702,16 @@ exports[`Switches.vue renders correctly 1`] = `
           3d Switch 
           <small>
             <code>
-              label
+              label 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -820,9 +847,16 @@ exports[`Switches.vue renders correctly 1`] = `
           3d Switch 
           <small>
             <code>
-              outline="alt" label
+              outline="alt" label 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -967,9 +1001,16 @@ exports[`Switches.vue renders correctly 1`] = `
           3d Switch 
           <small>
             <code>
-              outline="alt" label
+              outline="alt" label 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -1114,9 +1155,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              outline
+              outline 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -1243,9 +1291,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              outline variant="pill"
+              outline variant="pill" 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -1381,9 +1436,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              outline="alt"
+              outline="alt" 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -1510,9 +1572,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              outline="alt" variant="pill"
+              outline="alt" variant="pill" 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -1648,9 +1717,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              label
+              label 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -1777,9 +1853,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              label variant="pill"
+              label variant="pill" 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -1915,9 +1998,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              label outline
+              label outline 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -2053,9 +2143,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              label outline
+              label outline 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -2200,9 +2297,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              label outline
+              label outline 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -2338,9 +2442,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              label outline
+              label outline 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -2485,9 +2596,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              label
+              label 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -2614,9 +2732,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              label variant="pill"
+              label variant="pill" 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -2752,9 +2877,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              label outline
+              label outline 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -2890,9 +3022,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              label outline
+              label outline 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -3037,9 +3176,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              label outline
+              label outline 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub
@@ -3175,9 +3321,16 @@ exports[`Switches.vue renders correctly 1`] = `
           Switch 
           <small>
             <code>
-              label outline
+              label outline 
             </code>
           </small>
+           
+          <a
+            class="badge badge-danger"
+            href="https://coreui.io/pro/vue/"
+          >
+            CoreUI Pro Component
+          </a>
         </div>
          
         <c-switch-stub

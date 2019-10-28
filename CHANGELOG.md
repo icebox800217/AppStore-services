@@ -3,6 +3,20 @@
 ##### `v2.1.5`
 - fix(Forms): textarea is not textarea #161 - thanks @l2aelba
 - chore: lock `bootstrap-vue` to `2.0.0-rc.24`
+- fix(Draggable): vue-resize add missing css, refactor
+- test: update snapshots
+
+###### dependencies update
+- update `@babel/polyfill` to `^7.4.4`
+- update `@coreui/coreui-pro` to `^2.1.14`
+- update `bootstrap` to `^4.3.1`
+- update `bootstrap-vue` to `2.0.0-rc.24`
+- update `vue-grid-layout` to `^2.3.4`
+- update `vue-mq` to `^1.0.1`
+- update `vue-multiselect` to `^2.1.6`
+- update `vue2-google-maps` to `^0.10.6`
+- update `growl` to `^1.10.5`
+- update `https-proxy-agent` to `^2.2.1`
 
 ##### `v2.1.4`
 - fix(jest.config): babel-jest can't process import statement
@@ -16,7 +30,6 @@
 - chore(vue.config): add publicPath
 
 ###### dependencies update
-- update `@coreui/coreui` to `^2.1.12`
 - update `@coreui/coreui-plugin-chartjs-custom-tooltips` to `^1.3.1`
 - update `bootstrap-vue` to `^2.0.0-rc.24`
 - update `chart.js` to `^2.8.0`
@@ -41,14 +54,18 @@
 - chore: update test snapshots
 
 ##### `v2.1.2`
-- chore: update `@coreui/coreui` to `^2.1.6`
+- chore: update `@coreui/coreui-pro` to `^2.1.6`
 - chore: update `@coreui/vue` to `^2.1.2`
 - chore: update `core-js` to `^2.6.2`
 - chore: update `vue` to `^2.5.22`
 - chore: update `vue-template-compiler` to `^2.5.22`
+- chore: update `vue-codemirror` to `^4.0.6`
+- chore: update `vue-grid-layout` to `^2.3.3`
+- chore: update `vue-resize` to `^0.4.5`
+- chore: update `vue2-google-maps` to `^0.10.5`
 
 ##### `v2.1.1`
-- chore: update `@coreui/coreui` to `^2.1.5`
+- chore: update `@coreui/coreui-pro` to `^2.1.5`
 - chore: update `@coreui/vue` to `^2.1.1`
 - chore: update `bootstrap` to `^4.2.1`
 - chore: update `core-js` to `^2.6.1`
@@ -83,7 +100,7 @@
 },
 ```
 - test: e2e and snapshots update
-- chore: update `@coreui/coreui` to `^2.1.4`
+- chore: update `@coreui/coreui-pro` to `^2.1.4`
 - chore: update `@coreui/vue` to `^2.1.0`
 - chore: update `core-js` to `^2.6.0`
 - chore: update `css-vars-ponyfill` to `^1.15.3`
@@ -99,16 +116,28 @@
 - chore: update `node-sass` to `^4.11.0`
 
 ##### `v2.0.3`
+- feat(Spinners): add missing spinners 
+- chore: add `spinkit v1.2.5` dependency
+- test(Spinners): add basic testing for Spinners
+- test(e2e): add some more testing
+- chore: update`@coreui/coreui-pro` to `2.1.0`
+- chore: update`@coreui/vue` to `2.0.2`
+- chore: update`chart.js` to `2.7.3`
+- chore: update`flag-icon-css` to `3.2.1`
+- chore: update`vue-grid-layout` to `2.3.1`
+- chore: update`vue-multiselect` to `2.1.3`
+- chore: update`vue-tables-2` to `1.4.70`
+- chore: update`@vue/cli-plugin-babel` to `3.1.1`
+- chore: update`@vue/cli-plugin-e2e-nightwatch` to `3.1.1`
+- chore: update`@vue/cli-plugin-eslint` to `3.1.5`
+- chore: update`@vue/cli-plugin-unit-jest` to `3.1.1`
+- chore: update`@vue/cli-service` to `3.1.4`
+- chore: update`@vue/test-utils` to `1.0.0-beta.25`
+- chore: update`babel-jest` to `23.6.0`
+- chore: update`node-sass` to `4.10.0`
 - test(init): update Tables snapshot
 - test(e2e): add `aside-menu-*-show` testing
-- chore: update `@coreui/coreui` to `2.1.0`
 - chore: update `css-vars-ponyfill` to `1.15.0`
-- chore: update `@vue/cli-plugin-babel` to `3.1.1`
-- chore: update `@vue/cli-plugin-e2e-nightwatch` to `3.1.1`
-- chore: update `@vue/cli-plugin-eslint` to `3.1.5`
-- chore: update `@vue/cli-plugin-unit-jest` to `3.1.1`
-- chore: update `@vue/cli-service` to `3.1.4`
-- chore: update `node-sass` to `4.10.0`
 
 ##### `v2.0.2`
 - refactor: extract random() to `shared/utils`
@@ -148,13 +177,12 @@
 - refactor(CoreUIIcons): move to `@coreui/icons v0.3.0`
 - fix(Dashboard): SocialBoxChartExample height
 - fix(Widgets): SocialBoxChartExample height
-- fix(Widgets):  Income widgets cols
-- test(unit): add test for User.vue
-- test: add jest config for coverage
+- fix(Widgets): Income widgets cols
 
 ##### `v2.0.0-rc.0`
-- test(unit): add some views testing
-- test(e2e): add testing for mobile `sidebar-show`
+- test: add jest config for coverage
+- test(unit): add some views testing 
+- test(e2e): add testing for mobile `sidebar-show` 
 - refactor: card headers margins
 - chore: update `vue` to `2.5.17`
 - chore: update `vue-template-compiler` to `2.5.17`
@@ -168,29 +196,56 @@
 - chore: update `node-sass` to `4.9.3`
 - chore: update `sass-loader` to `7.1.0`
 - chore: update `vue-chartjs` to `3.4.0`
+- chore: update `text-mask-addons` to `3.8.0`
+- chore: update `vue-tables-2` to `1.4.64`
+- chore: update `vue2-google-maps` to `0.10.2`
 
 ##### `v2.0.0-beta.13`
-- fix(jest.config.js): solves - _SecurityError: localStorage is not available for opaque origins_
+- feat(Forms): Form Validation _**pro**_
+- fix(jest.config.js): solves - `SecurityError: localStorage is not available for opaque origins`
 - chore: update `bootstrap` to `4.1.3`
+- chore: update `vue-text-mask` to `6.1.2`
+- chore: update `vue2-google-maps` to `0.10.1`
 - chore: update `@vue/cli-plugin-babel` to `3.0.0-rc.7`
 - chore: update `@vue/cli-plugin-e2e-nightwatch` to `3.0.0-rc.7`
 - chore: update `@vue/cli-plugin-eslint` to `3.0.0-rc.7`
 - chore: update `@vue/cli-plugin-unit-jest` to `3.0.0-rc.7`
 - chore: update `@vue/cli-service` to `3.0.0-rc.7`
 
-##### `v2.0.0-beta.7`
+##### `v2.0.0-beta.12`
 - refactor(Footer): move default footer to the template
-- fix(Footer): IE sticky footer issue
 - chore: update `@coreui/vue` to `2.0.0-rc.3`
 - chore: update `bootstrap` to `4.1.2`
-- chore: update `@coreui/coreui` to `2.0.4`
+- chore: update `@vue/test-utils` to `1.0.0-beta.21`
+
+##### `v2.0.0-beta.11`
+- feat(Tables): Data Table _**pro**_
+- chore: update `@coreui/coreui-pro` to `2.0.6`,
+- chore: update `vue2-google-maps` to `0.10.0`
 - chore: update `@vue/cli-plugin-babel` to `3.0.0-rc.5`
 - chore: update `@vue/cli-plugin-e2e-nightwatch` to `3.0.0-rc.5`
 - chore: update `@vue/cli-plugin-eslint` to `3.0.0-rc.5`
 - chore: update `@vue/cli-plugin-unit-jest` to `3.0.0-rc.5`
 - chore: update `@vue/cli-service` to `3.0.0-rc.5`
-- chore: update `@vue/test-utils` to `1.0.0-beta.21`
+
+##### `v2.0.0-beta.10`
+- fix(Footer): IE sticky footer issue
+- fix(Calendar): dark theme consistency
+- fix(Draggable): temp fix for IE issue
+- fix(Calendar): temp fix for IE issue
+- chore: update `@coreui/vue` to `2.0.0-rc.1`
+- chore: update `bootstrap` to `4.1.2`
+- chore: update `vue2-google-maps` to `0.9.8`
+
+##### `v2.0.0-beta.9`
+- fix(Calendar): dark theme consistency
+
+##### `v2.0.0-beta.8`
+- feat(Plugins): Calendar _**pro**_
 - chore: update `babel-jest` to `23.4.0`
+
+##### `v2.0.0-beta.7`
+- feat(Plugins): Draggable Cards _**pro**_
 - chore: update `node-sass` to `4.9.2`
 
 ##### `v2.0.0-beta.6`
@@ -198,9 +253,10 @@
 - feat(router): `Users/User Details` Breadcrumb example with `/users/:id`
 - refactor(router): add dynamic imports for Webpack code splitting
 - refactor: remove empty `<style>` sections from `vue` files
-- refactor(Pages): add `b-form`, `b-form-input` and `autocomplete` to Login
-- refactor(Pages): add `b-form`, `b-form-input` and `autocomplete` to Register
-- chore: update `@coreui/coreui` to `2.0.3`
+- refactor(Pages): add `b-form`, `b-form-input` and `autocomplete` to Login 
+- refactor(Pages): add `b-form`, `b-form-input` and `autocomplete` to Register 
+- chore: update `@coreui/vue` to `2.0.0-rc.0`
+- chore: update `@coreui/coreui-pro` to `2.0.5`
 - chore: update `@vue/cli-plugin-babel` to `3.0.0-rc.3`
 - chore: update `@vue/cli-plugin-e2e-nightwatch` to `3.0.0-rc.3`
 - chore: update `@vue/cli-plugin-eslint` to `3.0.0-rc.3`
@@ -220,7 +276,7 @@
 - chore: dependencies update
 
 ##### `v2.0.0-beta.3`
-- refactor: `getStyles()` back to `@coreui/coreui` version `^2.0.2`
+- refactor: `getStyles()` back to `@coreui/coreui-pro` version `^2.0.2`
 - fix(Dashboard): `width` card-line*-chart-example `ie` issue
 
 ##### `v2.0.0-beta.2`
@@ -229,10 +285,15 @@
 - chore: dependencies update
 
 ##### `v2.0.0-beta.1`
+- refactor(router): rename `UI-Kits` to `Apps`
 - chore: update `@coreui/vue` to `2.0.0-beta.0`
+- chore: update `quill` to `1.3.6`
+- chore: update `vue-multiselect` to `2.1.0`
+- chore: update `vue2-google-maps` to `0.9.7`
 
 ##### `v2.0.0-beta.0`
-- chore: update `core-js` to `2.5.7`
+- feat(Advanced Forms): add Date Picker
+- refactor(Editors): adjust Code Mirror options
 
 ##### `v2.0.0-alpha.1`
 - refactor: separation of concerns - (CoreUI template/components) for use CoreUI as npm module

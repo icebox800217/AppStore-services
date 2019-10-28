@@ -206,6 +206,7 @@
     <b-card no-body>
       <b-card-header>
         <strong>Ghost Buttons</strong>
+        <a href="https://coreui.io/pro/vue/" rel="noreferrer noopener" target="_blank" class="badge badge-danger ml-1">CoreUI Pro</a>
       </b-card-header>
       <b-card-body>
         <p>
@@ -307,6 +308,7 @@
     <b-card no-body>
       <b-card-header>
         <strong>Square Buttons</strong>
+        <a href="https://coreui.io/pro/vue/" rel="noreferrer noopener" target="_blank" class="badge badge-danger ml-1">CoreUI Pro</a>
       </b-card-header>
       <b-card-body>
         <p>
@@ -414,6 +416,7 @@
     <b-card no-body>
       <b-card-header>
         <strong>Pill Buttons</strong>
+        <a href="https://coreui.io/pro/vue/" rel="noreferrer noopener" target="_blank" class="badge badge-danger ml-1">CoreUI Pro</a>
       </b-card-header>
       <b-card-body>
         <p>
